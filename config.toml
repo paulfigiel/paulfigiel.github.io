@@ -1,0 +1,18 @@
+title = "PixelYard"
+paginate = 5
+pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
+
+[params]
+  scheme = "dark" # light, dark or gray
+  description = "Video game programming and related things."
+
+#[menu]
+#  [[menu.main]]
+#    name = "ECS"
+#    url = "https://github.com/bake/solar-theme-hugo"
+#  [[menu.other]]
+#    name = "Unity"
+#    url = "https://themes.gohugo.io/solar-theme-hugo/"
+#  [[menu.other]]
+#    name = "Demo"
+url = "https://themes.gohugo.io/theme/solar-theme-hugo/"

@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset=utf-8><title>hello</title><meta name=viewport content="width=device-width"><link href=/categories/hello/index.xml rel=alternate type=application/rss+xml><link href=/categories/hello/index.xml rel=feed type=application/rss+xml><link rel=stylesheet href=css/hybrid.css><link rel=stylesheet href=css/style.css><link rel=stylesheet href=css/colors-dark.css></head><canvas id=background style="position:fixed;top:0;left:0;margin:0 auto;display:block;z-index:-99999"></canvas>
+<script src=js/perlin.js></script><script>var canvas=document.getElementById("background"),ctx=canvas.getContext("2d");canvas.width=screen.width;canvas.height=screen.height;var background=new Image();background.src="img/colored_transparent.png";var drawImage=function(x,y,posX,posY){var size=background.width/32;ctx.drawImage(background,size*x,size*y,size,size,posX,posY,size,size);}
+function getRandomInt(max){return Math.floor(Math.random()*Math.floor(max));}
+var grass=[{x:5,y:0},{x:6,y:0},{x:7,y:0},{x:1,y:0},{x:2,y:0},{x:5,y:2},{x:0,y:0},{x:0,y:0},{x:0,y:0},{x:0,y:0},{x:0,y:0},{x:0,y:0}];function randomGrass(){return grass[Math.floor(Math.random()*grass.length)]}
+background.onload=function(){noise.seed(Math.random());var noiseScale=30;for(let x=0;x<canvas.width/16;x++){for(let y=0;y<canvas.height/16;y++){var localnoise=noise.simplex2(x/noiseScale,y/noiseScale);var weeds=localnoise>-0.85&&localnoise<-0.7;var rocks=localnoise>-0.8&&localnoise<-0.79;if(localnoise>0.3)
+{drawImage(1*Math.floor(localnoise/0.3),1,x*16,y*16);}
+else if(localnoise>-0.8)
+{if(!weeds&&!rocks&&Math.random()<localnoise+0.8)
+drawImage(randomGrass().x,randomGrass().y,x*16,y*16);}
+else
+{drawImage(8,5,x*16,y*16);}
+if(weeds&&!rocks)
+drawImage(0,2,x*16,y*16);if(rocks)
+drawImage(5,2,x*16,y*16);}}}</script><body><header id=header><h1><a href></a></h1><p></p></header><div id=page><div id=sidebar><nav><ul><li><a href=/tags/blog/>blog (1)</a></li><li><a href=/tags/example/>example (1)</a></li><li><a href=/tags/hugo/>hugo (1)</a></li></ul></nav></div><div id=content><article class=post><h1><a href=/posts/hello-hugo/>Hello Hugo!</a></h1><div class=post-content><p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file content/post/hello-hugo.md has been converted into a complete HTML document by Hugo. Isn&rsquo;t that pretty nifty?
+A Section Here&rsquo;s a simple titled section where you can place whatever information you want.
+You can use inline HTML if you want, but really there&rsquo;s not much that Markdown can&rsquo;t do.
+Showing off with Markdown A full cheat sheet can be found here or through Google. …</p></div><p class=meta>Posted on <span class=postdate>01. September 2014</span></p></article></div><footer id=footer><p class=copyright>Powered by
+<a href=https://gohugo.io/>Hugo</a> based on the
+<a href=https://github.com/bake/solar-theme-hugo>Solar</a>-theme.</p></footer></div></body></html>
