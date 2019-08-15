@@ -6,6 +6,10 @@ pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
   scheme = "dark" # light, dark or gray
   description = "Video game programming and related things."
 
+[taxonomies]
+  scrap= "scraps"
+  categorie= "categories"
+
 #[menu]
 #  [[menu.main]]
 #    name = "ECS"
