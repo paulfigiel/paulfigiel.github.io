@@ -11,7 +11,7 @@ else
 {drawImage(8,5,x*16,y*16);}
 if(weeds&&!rocks)
 drawImage(0,2,x*16,y*16);if(rocks)
-drawImage(5,2,x*16,y*16);}}}</script><body><header id=header><h1><a href></a></h1><p></p></header><div id=page><div id=sidebar><nav><ul><li><a href=/tags/c#/>C# (1)</a></li><li><a href=/tags/coroutine/>Coroutine (1)</a></li><li><a href=/tags/unity3d/>Unity3D (1)</a></li></ul></nav></div><div id=content><article class=post><h1><a href=/posts/hello-hugo/>Corouter</a></h1><div class=post-content><p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file <code>content/post/hello-hugo.md</code> has been
+drawImage(5,2,x*16,y*16);}}}</script><body><header id=header><h1><a href>PixelYard</a></h1><p>Video game programming and related things.</p></header><div id=page><div id=sidebar><nav><ul><li><a href=/tags/c#/>C# (1)</a></li><li><a href=/tags/coroutine/>Coroutine (1)</a></li><li><a href=/tags/unity3d/>Unity3D (1)</a></li></ul></nav></div><div id=content><article class=post><h1><a href=/posts/hello-hugo/>Corouter</a></h1><div class=post-content><p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file <code>content/post/hello-hugo.md</code> has been
 converted into a complete HTML document by Hugo. Isn&rsquo;t that pretty nifty?</p><h2 id=a-section>A Section</h2><p>Here&rsquo;s a simple titled section where you can place whatever information you want.</p><p>You can use inline HTML if you want, but really there&rsquo;s not much that Markdown can&rsquo;t do.</p><h2 id=showing-off-with-markdown>Showing off with Markdown</h2><p>A full cheat sheet can be found <a href=https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>here</a>
 or through <a href=https://google.com/>Google</a>.</p><p>There are some <em>easy</em> examples for styling, though. I can&rsquo;t <strong>emphasize</strong> that enough.
 Creating <a href=https://google.com/>links</a> or <code>inline code</code> blocks are very straightforward.</p><pre><code>There are some *easy* examples for styling, though. I can't **emphasize** that enough.
@@ -31,33 +31,33 @@ tags:
 </code></pre><p>This section, called &lsquo;Front Matter&rsquo;, is what tells Hugo about the content in this file: the <code>title</code> of the item, the
 <code>description</code>, and the <code>date</code> it was posted. In our example, we&rsquo;ve added two custom bits of data too. The <code>categories</code> and
 <code>tags</code> sections are used in this example for indexing/grouping content. You will learn more about what that means by
-examining the code in this example and through reading the Hugo <a href=http://gohugo.io/overview/introduction>documentation</a>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=color:#66d9ef>using</span> UnityEngine;
-<span style=color:#66d9ef>using</span> UnityEngine.Events;
-<span style=color:#66d9ef>using</span> System.Collections;
+examining the code in this example and through reading the Hugo <a href=http://gohugo.io/overview/introduction>documentation</a>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=color:#719e07>using</span> UnityEngine;
+<span style=color:#719e07>using</span> UnityEngine.Events;
+<span style=color:#719e07>using</span> System.Collections;
 
-<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ExampleClass</span> : MonoBehaviour
+<span style=color:#719e07>public</span> <span style=color:#719e07>class</span> <span style=color:#268bd2>ExampleClass</span> : MonoBehaviour
 {
     UnityEvent m_MyEvent;
 
-    <span style=color:#66d9ef>void</span> Start()
+    <span style=color:#719e07>void</span> Start()
     {
-        <span style=color:#66d9ef>if</span> (m_MyEvent == <span style=color:#66d9ef>null</span>)
-            m_MyEvent = <span style=color:#66d9ef>new</span> UnityEvent();
+        <span style=color:#719e07>if</span> (m_MyEvent == <span style=color:#719e07>null</span>)
+            m_MyEvent = <span style=color:#719e07>new</span> UnityEvent();
 
         m_MyEvent.AddListener(Ping);
     }
 
-    <span style=color:#66d9ef>void</span> Update()
+    <span style=color:#719e07>void</span> Update()
     {
-        <span style=color:#66d9ef>if</span> (Input.anyKeyDown &amp;&amp; m_MyEvent != <span style=color:#66d9ef>null</span>)
+        <span style=color:#719e07>if</span> (Input.anyKeyDown &amp;&amp; m_MyEvent != <span style=color:#719e07>null</span>)
         {
             m_MyEvent.Invoke();
         }
     }
 
-    <span style=color:#66d9ef>void</span> Ping()
+    <span style=color:#719e07>void</span> Ping()
     {
-        Debug.Log(<span style=color:#e6db74>&#34;Ping&#34;</span>);
+        Debug.Log(<span style=color:#2aa198>&#34;Ping&#34;</span>);
     }
 }
 </code></pre></div></div><p class=meta>Posted on <span class=postdate>15. August 2019</span></p></article></div><footer id=footer><p class=copyright>Powered by
