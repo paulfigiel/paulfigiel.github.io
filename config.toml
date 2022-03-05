@@ -1,6 +1,5 @@
 title = "PixelYard"
 theme = "solar-theme-hugo"
-publishdir = "../"
 paginate = 5
 pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
 
